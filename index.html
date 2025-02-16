@@ -1,0 +1,77 @@
+<!DOCTYPE html>  
+<html lang="vi">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Welcome to C2-sowrthus</title>  
+    <style>  
+        body {  
+            font-family: Arial, sans-serif;  
+            line-height: 1.6;  
+            margin: 20px;  
+            padding: 20px;  
+            background-color: #2b77da;  
+        }  
+        h1 {  
+            color: #333;  
+        }  
+        nav {  
+            margin-bottom: 20px;  
+        }  
+        nav a {  
+            display: block;  
+            margin: 10px 0;  
+            text-decoration: none;  
+            color: #cf112a;  
+            font-size: 1.5em;
+        }  
+        nav a:hover {  
+            text-decoration: underline;  
+        }  
+        .welcome-message {  
+            display: none;  
+            position: fixed;  
+            top: 50%;  
+            left: 50%;  
+            transform: translate(-50%, -50%);  
+            background-color: #1089ec;  
+            padding: 20px;  
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);  
+            border-radius: 10px;  
+            text-align: center;  
+            z-index: 1000;  
+        }  
+        .welcome-message.show {  
+            display: block;  
+            animation: fadeIn 1s ease-in-out;  
+        }  
+        @keyframes fadeIn {  
+            from { opacity: 0; }  
+            to { opacity: 1; }  
+        }  
+    </style>  
+</head>  
+<body>  
+
+    <div class="welcome-message" id="welcomeMessage">Chào mừng bạn đến với C2-sowrthus!</div>  
+
+    <h1>C2-sowrthus có gì ?</h1>  
+
+    <nav>  
+        <a href="introduce.html">I.Giới thiệu</a>  
+        <a href="onthi.html">II.Cùng nhau ôn thi</a>  
+        <a href="celebrate.html">III.Kỷ niệm</a>  
+    </nav>  
+
+    <script>  
+        window.onload = function() {  
+            var welcomeMessage = document.getElementById('welcomeMessage');  
+            welcomeMessage.classList.add('show');  
+            setTimeout(function() {  
+                welcomeMessage.classList.remove('show');  
+            }, 3000);  
+        };  
+    </script>  
+
+</body>  
+</html>
