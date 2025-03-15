@@ -5,10 +5,8 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  // Thay thế '<tên-repository-của-bạn>' bằng tên repository thực tế của bạn
-  // Ví dụ: nếu URL GitHub Pages của bạn là https://username.github.io/memory-garden-friends/
-  // thì base sẽ là '/memory-garden-friends/'
-  base: mode === 'production' ? '/memory-garden-friends/' : '/',
+// Thêm base URL là tên repository của bạn
+  base: mode === 'production' ? '/<C2-sowrthus>/' : '/',
   server: {
     host: "::",
     port: 8080,
